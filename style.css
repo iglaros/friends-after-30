@@ -540,3 +540,23 @@ article > p {
   }
 
 }
+
+.article-footer {
+  margin-top: 80px;
+  background-color: #581936;
+  color: #FFFFFF;
+  padding: 24px 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.article-footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .article-footer {
+    margin-top: 48px;
+    padding: 20px;
+  }
+}
