@@ -250,6 +250,7 @@ p {
   margin-top: 0;
   margin-bottom: 20px;
   hyphens: none;
+  text-wrap: pretty;
 }
 
 .article-header > .article-illustration {
