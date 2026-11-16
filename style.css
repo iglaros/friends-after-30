@@ -85,9 +85,16 @@ h3 {
 
 .expert-comment {
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 15% 1fr;
   column-gap: 24px;
-  margin: 40px 0;
+  align-items: start;
+
+  background-color: #FFE9A6;
+  padding: 24px;
+
+  width: 125%;
+  box-sizing: border-box;
+  margin: 48px 0 0 8.93%;
 }
 
 .expert-name {
@@ -96,7 +103,8 @@ h3 {
 }
 
 .expert-position {
-  margin: 0 0 16px;
+  font-size: 14px;
+  margin: 0 0 12px;
 }
 
 .expert-text p {
@@ -189,7 +197,10 @@ h3 {
 
 .expert-image {
   width: 100%;
+  aspect-ratio: 1 / 1;
   height: auto;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
 }
 
@@ -530,14 +541,16 @@ article > p {
 @media (max-width: 700px) {
 
   .expert-comment {
-    grid-template-columns: 80px minmax(0, 1fr);
-    column-gap: 16px;
+    width: 100%;
     margin: 32px 0;
+    padding: 16px;
+    grid-template-columns: 60px minmax(0, 1fr);
+    column-gap: 12px;
   }
 
   .expert-image {
-    width: 80px;
-    height: auto;
+    width: 60px;
+    height: 60px;
   }
 
 }
