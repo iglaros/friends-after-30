@@ -560,3 +560,19 @@ article > p {
     padding: 20px;
   }
 }
+.threads-collage {
+  width: 100%;
+  margin: 48px 0;
+}
+
+.threads-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 700px) {
+  .threads-collage {
+    margin: 32px 0;
+  }
+}
+
