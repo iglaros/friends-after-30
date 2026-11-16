@@ -543,10 +543,13 @@ article > p {
 }
 
 .article-footer {
+  width: 100vw;
+  box-sizing: border-box;
   margin-top: 80px;
+  margin-left: -70px;
   background-color: #581936;
   color: #FFFFFF;
-  padding: 24px 30px;
+  padding: 24px 70px;
   font-size: 14px;
   line-height: 1.5;
 }
