@@ -59,10 +59,10 @@ h3 {
 
 .story {
   display: grid;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 1fr 15%;
   grid-template-areas:
-    "photo title"
-    "photo quote";
+    "title photo"
+    "quote photo";
   column-gap: 24px;
 
   background-color: #FFE9A6;
@@ -85,7 +85,7 @@ h3 {
 
 .expert-comment {
   display: grid;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 1fr 15%;
   column-gap: 24px;
   align-items: start;
 
@@ -440,7 +440,7 @@ article > p {
     margin: 32px 0;
     padding: 16px;
     box-sizing: border-box;
-    grid-template-columns: 60px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 60px;
     column-gap: 12px;
   }
 
@@ -544,7 +544,7 @@ article > p {
     width: 100%;
     margin: 32px 0;
     padding: 16px;
-    grid-template-columns: 60px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 60px;
     column-gap: 12px;
   }
 
@@ -598,4 +598,14 @@ article > p {
 .article-section > h2 + p:not(.section-subtitle),
 .article-conclusion > h2 + p {
   margin-top: 24px;
+}
+
+.expert-image {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.expert-content {
+  grid-column: 1;
+  grid-row: 1;
 }
