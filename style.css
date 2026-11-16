@@ -577,3 +577,8 @@ article > p {
   }
 }
 
+
+.article-section > h2 + p:not(.section-subtitle),
+.article-conclusion > h2 + p {
+  margin-top: 24px;
+}
