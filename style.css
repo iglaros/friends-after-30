@@ -289,7 +289,7 @@ article > p {
 }
 
 .friends-image .content-image {
-  width: 75%;
+  width: 100%;
   max-width: 320px;
   height: auto;
 }
