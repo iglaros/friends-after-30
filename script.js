@@ -20,7 +20,7 @@ function fixHangingWords() {
     textNodes.push(node);
   }
 
-  const shortWords = /(?<!\p{L})(в|и|к|с|у|о|а|на|по|из|от|до|за|не|но|же|ли|бы|об|со|во|под|при)\s+(?=\p{L})/giu;
+  const shortWords = /(?<!\p{L})(в|и|к|с|у|о|а|на|по|из|от|до|за|не|но|же|ли|бы|об|со|во|под|при|для|из-за)\s+(?=\p{L})/giu;
 
   textNodes.forEach(node => {
     node.textContent = node.textContent.replace(
